@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  database:
+    image: postgres:13.2-alpine
+    environment:
+      POSTGRES_USER: carhub
+      POSTGRES_PASSWORD: carhub
+      POSTGRES_DB: carhub
+    ports: [5432]
