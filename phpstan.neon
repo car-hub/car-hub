@@ -3,6 +3,6 @@ includes:
 parameters:
     level: max
     symfony:
-        container_xml_path: '%rootDir%/../../../var/cache/test/App_KernelTestDebugContainer.xml'
+        container_xml_path: '%rootDir%/../../../var/cache/test/CarHub_KernelTestDebugContainer.xml'
     doctrine:
         objectManagerLoader: tests/doctrine.php

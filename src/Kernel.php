@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace CarHub;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
