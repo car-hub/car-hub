@@ -31,7 +31,11 @@
         "symfony/symfony": "*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0"
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^0.12.85",
+        "phpstan/phpstan-doctrine": "^0.12.33",
+        "phpstan/phpstan-symfony": "^0.12.32"
     },
     "config": {
         "optimize-autoloader": true,
@@ -74,6 +78,10 @@
         ],
         "fix-cs": [
             "php-cs-fixer fix"
+        ],
+        "phpstan": [
+            "bin/console cache:clear --env=test",
+            "phpstan analyse src tests --level=max"
         ]
     }
 }

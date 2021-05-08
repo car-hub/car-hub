@@ -1,0 +1,8 @@
+includes:
+	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
+parameters:
+    level: max
+    symfony:
+        container_xml_path: '%rootDir%/../../../var/cache/test/App_KernelTestDebugContainer.xml'
+    doctrine:
+        objectManagerLoader: tests/doctrine.php
